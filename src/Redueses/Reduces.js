@@ -4,7 +4,7 @@ export const taskReducer = (state, action) =>{
             console.log(state.allTasks)
             return {
                 ...state,
-                allTasks: state.allTasks && [...state.allTasks, action.payload]
+                allTasks: state.allTasks && [action.payload, ...state.allTasks]
             }
         case "DELETE_TASK":
             const fileredTasks = state.allTasks.filter(task=>task.id !== action.payload);

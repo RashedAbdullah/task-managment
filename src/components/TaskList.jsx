@@ -44,7 +44,7 @@ const TaskList = ({ taskItem }) => {
                 isEdit?
                 <input className='editInput' type="text" onChange={(e)=>setUpdate(e.target.value)} value={update}/>
                 :
-                <span style={{textDecoration: isChecked ? "line-through" : "", color: isChecked? "blue": ""}}>{task}</span>
+                <span style={{textDecoration: isChecked ? "line-through" : "", color: isChecked? "green": ""}}>{task}</span>
               }
             </p>
         </div>
